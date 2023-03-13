@@ -21,8 +21,11 @@ main #team_profile .c_5 {}
 main #team_profile .c_5 img {}
 main #info {}
 main #info > ul {}
-main #info > ul .open_btn {width:800px;margin:0 auto; display:flex; justify-content:space-between;}
-main #info > ul .open_btn span {}
+main #info > ul .open_btn {
+    width:800px;margin:0 auto; display:flex; justify-content:space-between;
+}
+main #info > ul .close_btn {display:none;}
+main #info > ul .open_btn span {font-size:100px;}
 main #info > ul .open_btn button {}
 main #info > ul .open_btn button img {}
 main #info > ul li {}
