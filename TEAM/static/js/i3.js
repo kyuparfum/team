@@ -27,7 +27,7 @@ window.onload=function(){
     let close_btn=document.querySelector('.close_btn')
     let close_btn_button=document.querySelector('.close_btn > button')
     let open_list=document.querySelector('.open_list')
-    
+
 
     open_btn.addEventListener('click',function(){
         open_btn.style.display='none'
