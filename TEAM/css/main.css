@@ -29,8 +29,9 @@ main #info > ul .close_btn {transition:.5s linear;
 }
 main #info > ul .open_btn span {font-size:100px;}
 main #info > ul .close_btn span {font-size:100px;}
-main #info > ul .open_btn button {}
+main #info > ul .open_btn button {transition:.5s linear;}
 main #info > ul .open_btn button img {}
+main #info > ul .close_btn button img {transform:rotate(0);}
 main #info > ul li {}
 main #info > ul li ul {}
 main #info > ul li ul .write_box {text-align:right; /* background-color:pink; */width:800px;
