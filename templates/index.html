@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="../static/css/reset.css">
+
+
+    <!-- 부트스트랩 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- AJAX CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/weather.js"></script>
+
+    <link rel="stylesheet" href="../static/css/styles.css" />
+
+
+
+    <title>IE9 Team</title>
+
+
+
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div id=weather_section>
+
+        <div id="weatherContainer">
+            <span id="city"></span><img src="../static/img/gps_icon.png" style="width:14px;">
+            <span id="weather"></span><br>
+            
+            <span id="other_temp"></span>
+        </div>
+
+    </div>
+    <div class="pop_up">
+    </div><!-- e:pop_up -->
+    <main id="index_main">
+        <div id="title">
+            <h1 style="background-image:url(../static/img/ie9_logo.png);">
+
+
+            </h1>
+            
+        </div><!-- e:title -->
+        <div id="team_profile">
+            <a href='javascript:void(0);' onclick="go_detail_page('cy')" class="t_card c_1">
+                <div class="txt_box">
+                    <p>팀장</p>
+                    <p>서채연</p>
+                </div><!-- e:txt_box -->
+                <img src="../static/img/35768_68227_247.jpg" alt="1_img">
+            </a><!-- e:t_card c_1 -->
+            <a href='javascript:void(0);' onclick="go_detail_page('jh')" class="t_card c_1">
+                <div class="txt_box">
+                    <p>팀원</p>
+                    <p>이정현</p>
+                </div><!-- e:txt_box -->
+                <img src="../static/img/image_readtop_2021_535745_16226846584668330.jpg" alt="2_img">
+            </a><!-- e:t_card c_1 -->
+            <a href='javascript:void(0);' onclick="go_detail_page('yw')" class="t_card c_1">
+                <div class="txt_box">
+                    <p>팀원</p>
+                    <p>김영우</p>
+                </div><!-- e:txt_box -->
+                <img src="../static/img/img.jpg" alt="3_img">
+            </a><!-- e:t_card c_3 -->
+            <a href='javascript:void(0);' onclick="go_detail_page('jk')" class="t_card c_4">
+                <div class="txt_box">
+                    <p>팀원</p>
+                    <p>최진규</p>
+                </div><!-- e:txt_box -->
+                <img src="../static/img/고양이_나이1.jpg" alt="4_img">
+            </a><!-- e:t_card c_4 -->
+            <a href='javascript:void(0);' onclick="go_detail_page('hw')" class="t_card c_5">
+                <div class="txt_box">
+                    <p>팀원</p>
+                    <p>장한울</p>
+                </div><!-- e:txt_box -->
+                <img src="../static/img/ray-zhuang-Px2Y-sio6-c-unsplash-scaled.jpg" alt="5_img">
+            </a><!-- e:t_card c_5 -->
+        </div><!-- e:team_profile -->
+        <!-- 팀 소개 보이기/숨기기 -->
+        <div class="accordion"id="accordionExample">
+            <div class="accordion-item" style="background-color:#00000000;" >
+                <h2 class="accordion-header" id="headingOne" >
+                    <button style="background-color:#00000000;"  class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    팀 소개
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><strong>I</strong> 4명과 <span>E</span> 한명이 모인 뉴비들의 반란!!<br>
+                            <em>IE9처럼 사라지지는 않을 겁니다</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                
+                
+        <div class="mycards" id="comment-list" style="padding: 20px;">
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
