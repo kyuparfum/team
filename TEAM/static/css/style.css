@@ -93,6 +93,7 @@ main #info>ul .close_btn {
 
 main #info>ul .open_btn span {font-size:100px;}
 main #info>ul .close_btn span {font-size:100px;}
+main #info>ul .open_list {display:none;}
 
 main #info>ul .open_btn button {}
 
@@ -124,7 +125,6 @@ main #info>ul li ul .write_box input[type=text] {
 .w_b_btn {
     margin: 10px;
 }
-
 
 
 main #info>ul li ul .box {
