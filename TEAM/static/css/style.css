@@ -11,6 +11,30 @@ header,main,footer,nav,section,article,aside,figure,figcaption,details {
     font-family: 'Nanum Brush Script', cursive; */
     font-family: 'Nanum Gothic', sans-serif;
 }
+.pop_up {
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100%;
+    height:100vh;z-index:99;
+    background-image:url(https://cdn.pixabay.com/photo/2022/01/11/19/43/avocado-6931344__340.jpg);position:absolute;
+    animation:bg 3s 1 linear; opacity:0;
+}
+@keyframes bg {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+@keyframes op {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+main #team_profile {
+    display: flex; flex-flow:row wrap;
+    justify-content: center;
+    margin: 50px;
+    position: relative;
+    z-index: 99;
+    animation:op 5s 1 linear;opacity:1;
+}
 main {
     width: 1200px;
     margin: 0 auto;
@@ -28,14 +52,13 @@ main #title h1 {
     height:300px;
 }
 
-main #team_profile {
-    display: flex;
-    justify-content: center;
-}
+
 
 main #team_profile .t_card {
     position: relative;
     margin-right: 10px;
+    width: 270px;
+    text-align:center;
 }
 
 main #team_profile .t_card .txt_box {
@@ -64,10 +87,6 @@ main #team_profile a img {
     border-radius: 50%;
 }
 
-main #team_profile {
-    margin: 50px;
-}
-
 main #team_profile .c_1 {}
 
 main #team_profile .c_1 img {}
@@ -93,6 +112,8 @@ main #info {}
 main #info>ul {}
 
 main #info>ul .open_btn {
+    position: relative;
+    z-index:99;
     width: 800px;
     margin: 50px auto;
     display: flex;
@@ -100,15 +121,17 @@ main #info>ul .open_btn {
 
 }
 main #info>ul .close_btn {
+    position: relative;
+    z-index: 99;
     width: 800px;
     margin: 50px auto;
     display: none;
     justify-content: space-between;
 }
 
-main #info>ul .open_btn span {font-size:100px;}
+main #info>ul .open_btn span {font-size:15px;}
 
-main #info>ul .close_btn span {font-size:100px;}
+main #info>ul .close_btn span {font-size:15px;}
 
 main #info>ul .open_list {display:none;}
 
@@ -133,12 +156,14 @@ main #info>ul li ul {}
 .write_box {
     text-align: right;
     /* background-color:pink; */
+    position:absolute;
     width: 800px;
     display: flex;
     flex-flow: column nowrap;
     border: 1px solid #000;
-    margin: 0 auto;
+    margin: 0 0 0 250px;
     padding: 20px;
+    border-radius: 25px;
 }
 
 main #info>ul li ul .write_box input[type=text] {
@@ -175,3 +200,29 @@ main #info>ul li ul .b_3 {}
 main #info>ul li ul .b_4 {}
 
 /* 방명록할거면 어팬드해야하니깐 이부분은 그때지우면될거같습니다. */
+/* 개인페이지 css */
+main {}
+main h1 {margin: 50px;}
+main #all_info_box {display:flex;}
+main #all_info_box .all_box {}
+main #all_info_box .all_box .image_box {}
+main #all_info_box .all_box .image_box .image {}
+main #all_info_box .all_box .p_info {margin-right:20px}
+main #all_info_box .all_box .p_info p {margin-bottom:10px;}
+main #all_info_box .all_box .p_info .name {}
+main #all_info_box .all_box .p_info .blog {}
+main #all_info_box .all_box .p_info .email {}
+main #all_info_box .all_box .p_info .qr_code {width:250px;height:250px; background-color:aqua;margin-bottom:10px;}
+main #all_info_box .all_box .p_info .mbti {}
+main #all_info_box .all_box .p_info .mbti span {}
+main #all_info_box .profile {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+main #all_info_box .profile dt {
+    margin-bottom:40px; font-size:4rem;
+}
+main #all_info_box .profile dd {
+    line-height:1.6;font-size:1.5rem;
+}
