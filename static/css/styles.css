@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .pop_up {
     background-size: cover;
@@ -13,7 +13,7 @@
 }
 
 body{
-    background-color: rgb(243, 239, 255);
+    background-color: #272629;
 }
 
 @keyframes bg {
@@ -31,6 +31,8 @@ body{
     border: 1px solid gray;
     border-radius: 15px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -67,16 +69,15 @@ main #title h1 {
 
 main #team_profile .t_card {
     position: relative;
-    margin-right: 10px;
+    margin: 30px;
     width: 270px;
     text-align: center;
 }
 
 main #team_profile .t_card .txt_box {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: -60px;
+    right: 0px;
 }
 
 main #team_profile .t_card .txt_box p {
@@ -160,14 +161,14 @@ main #info>ul .open_list {
 }
 #collapseOne {}
 .accordion-body p span {
-    color: rgb(255, 0, 212);
+    color: rgb(255, 193, 246);
     font-size: 2.5rem;
     line-height: 1.8;
     font-weight: 700;
 }
 
 .accordion-body p strong {
-    color: rgb(0, 8, 255);
+    color: rgb(172, 175, 255);
     font-size: 2.5rem;
     line-height: 1.8;
     font-weight: 700;
@@ -176,7 +177,7 @@ main #info>ul .open_list {
 .accordion-body p em {
     font-size: 2rem;
     line-height: 1.8;
-    color: #f00;
+    color: rgb(255, 137, 137);
     font-weight: 700;
 }
 
@@ -191,13 +192,16 @@ main #info>ul li ul {}
 .write_box {
     text-align: right;
     /* background-color:pink; */
-    width: 50vw;
+    width: 55vw;
     display: flex;
     flex-flow: column nowrap;
-    border: 1px solid #000;
-    margin: 0 0 0 250px;
+    border: 1px solid gray;
+    margin: 50px 50px 50px 20vw;
     padding: 20px;
     border-radius: 25px;
+}
+.form-control{
+    background-color: rgba(104, 104, 104, 0.315);
 }
 
 main #info>ul li ul .write_box input[type=text] {
@@ -212,9 +216,24 @@ main #info>ul li ul .write_box input[type=text] {
     margin: 10px;
 }
 
-
+#all_guestbook{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 .card {
     margin-bottom: 15px;
+    background-color: #3f3e4162;
+    border: 2px solid rgb(255, 253, 246);
+    border-radius: 30px;
+    width: 70vw;
+   
+}
+.card-body{
+    color: white;
+    padding: 30px;
+    
 }
 
 .card:last-child {
@@ -241,15 +260,32 @@ main #info>ul li ul .b_3 {}
 
 main #info>ul li ul .b_4 {}
 
+
+.blockquote-footer{
+    margin-top: 5px;
+    text-align: right;
+}
+.blockquote mb-0{
+    margin-left: 10px;
+}
+
 /* 방명록할거면 어팬드해야하니깐 이부분은 그때지우면될거같습니다. */
 
 /* 개인페이지 css */
 #detail_main {
     width: 75vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10vw;
+    margin-right: 15vw;
+    margin-top: 100px;
 }
-
+.all_box {
+    width: 18vw ;
+    margin-right: 20px;
+    white-space: normal;
+}
+.all_box .image{
+    width: 18vw;
+}
 main>h1 {
     margin: 50px;
 }
@@ -274,9 +310,11 @@ main #all_info_box .all_box .image_box {}
 main #all_info_box .all_box .image_box .image {}
 
 main #all_info_box .all_box .p_info {
-    margin-right: 20px
+    margin: 20px
 }
-
+.p_info a{
+    text-decoration-line: none;
+}
 main #all_info_box .all_box .p_info p {
     margin-bottom: 10px;
 }
@@ -305,6 +343,7 @@ main #all_info_box .profile {
     flex-flow: column;
     justify-content: flex-start;
     position: relative;
+    margin-left: 10px;
 }
 
 main #all_info_box .profile dt {
@@ -313,10 +352,24 @@ main #all_info_box .profile dt {
 }
 
 main #all_info_box .profile div {
-
     line-height: 1.6;
-    font-size: 1.5rem;
-    margin-top: 20px;
+    font-size: 1.2rem;
     white-space: normal;
-
+    border: 1px solid gray;
+    padding: 30px;
+    border-radius: 20px;
 }
+
+/* footer css */
+.footer {
+    display:flex; width:100%; margin:20px auto 0;
+    justify-content:space-evenly;background-color:pink;
+}
+.footer .f_left {text-align:center;padding: 0;margin: 0;}
+.footer .f_left li {margin:20px 0;font-size:1.5rem;color:#000;}
+.footer .f_left li a {font-size:1.5rem;}
+.footer .f_left .title {font-size: 2rem;font-weight:700;margin-bottom:25px;}
+.footer .f_right {text-align:center;padding: 0;margin: 0;}
+.footer .f_right li {margin:20px 0;font-size:1.5rem;color:#000;}
+.footer .f_right li a {font-size:1.5rem;}
+.footer .f_right .title {font-size: 2rem;font-weight:700;margin-bottom:25px;}
