@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .pop_up {
     background-size: cover;
     width: 100%;
@@ -12,28 +19,44 @@
     background-repeat: no-repeat;
 }
 
-body{
+body {
     background-color: #272629;
 }
 
-@keyframes bg {
-    0% {opacity: 1;}
+a:link{
+    text-decoration-line: none;
+    color: gray;
+}
 
-    100% {opacity: 0;}
+@keyframes bg {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes op {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-#weather_section{
+#weather_section {
     border: 1px solid gray;
     border-radius: 15px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-
+    padding: 20px;
+    width: auto;
+    display: inline-block;
 }
+
 
 
 main #team_profile {
@@ -50,12 +73,13 @@ main #team_profile {
 #index_main {
     width: 1200px;
     margin: 0 auto;
-    
+
 }
 
 main #title {
     text-align: center;
-    margin-top: 50px;
+    margin:50px 0;
+    display:flex; justify-content:center;
 }
 
 main #title h1 {
@@ -64,8 +88,41 @@ main #title h1 {
     background-size: contain;
     height: 300px;
 }
+main #title h2 {
+    position:relative;font-size:5rem;
+}
+main #title h2:nth-child(1) {
+    animation:tiop .4s 1 linear;
+}
+main #title h2:nth-child(2) {
+    animation:tiop .4s 1 linear .4s;
+}
+main #title h2:nth-child(3) {
+    animation:tiop .4s 1 linear .8s;
+}
+main #title h2:nth-child(4) {
+    animation:tiop .4s 1 linear 1.2s;
+}
+main #title h2:nth-child(5) {
+    animation:tiop .4s 1 linear 1.6s;
+}
+main #title h2:nth-child(6) {
+    animation:tiop .4s 1 linear 2s;
+}
+main #title h2:nth-child(7) {
+    animation:tiop .4s 1 linear 2.4s;
+}
+main #title h2:nth-child(8) {
+    animation:tiop .4s 1 linear 2.8s;
+}
+main #title h2:nth-child(9) {
+    animation:tiop .4s 1 linear 3.2s;
+}
 
-
+@keyframes tiop {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
 
 main #team_profile .t_card {
     position: relative;
@@ -79,12 +136,11 @@ main #team_profile .t_card .txt_box {
     bottom: -60px;
     right: 0px;
 }
-
 main #team_profile .t_card .txt_box p {
     text-align: center;
     color: #fff;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 main #team_profile .t_card .txt_box p:first-child {
@@ -159,7 +215,9 @@ main #info>ul .open_list {
     font-size: 2rem;
     line-height: 1.8;
 }
+
 #collapseOne {}
+
 .accordion-body p span {
     color: rgb(255, 193, 246);
     font-size: 2.5rem;
@@ -196,11 +254,15 @@ main #info>ul li ul {}
     display: flex;
     flex-flow: column nowrap;
     border: 1px solid gray;
-    margin: 50px 50px 50px 20vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     border-radius: 25px;
 }
-.form-control{
+
+.form-control {
     background-color: rgba(104, 104, 104, 0.315);
 }
 
@@ -216,24 +278,32 @@ main #info>ul li ul .write_box input[type=text] {
     margin: 10px;
 }
 
-#all_guestbook{
-    width: 70%;
+#all_guestbook {
+    width: 60vw;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
+
+.mycards {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .card {
     margin-bottom: 15px;
-    background-color: #3f3e4162;
-    border: 2px solid rgb(255, 253, 246);
+    background-color: #36363849;
+    border: 2px solid gray !important;
     border-radius: 30px;
-    width: 70vw;
-   
+    width: 60vw;
+
 }
-.card-body{
+
+.card-body {
     color: white;
     padding: 30px;
-    
+
 }
 
 .card:last-child {
@@ -261,11 +331,12 @@ main #info>ul li ul .b_3 {}
 main #info>ul li ul .b_4 {}
 
 
-.blockquote-footer{
+.blockquote-footer {
     margin-top: 5px;
     text-align: right;
 }
-.blockquote mb-0{
+
+.blockquote mb-0 {
     margin-left: 10px;
 }
 
@@ -278,27 +349,35 @@ main #info>ul li ul .b_4 {}
     margin-right: 15vw;
     margin-top: 100px;
 }
+
 .all_box {
-    width: 18vw ;
+    width: 18vw;
     margin-right: 20px;
     white-space: normal;
+    margin-left: -20px;
 }
-.all_box .image{
+
+.all_box .image {
     width: 18vw;
 }
+
 main>h1 {
     margin: 50px;
 }
+
 .accordion {
     z-index: 99;
     width: 900px;
     position: relative;
-    margin:50px auto;
+    margin: 50px auto;
     animation: op 5s 1 linear;
     opacity: 1;
 }
+
 main #all_info_box {
     display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 main #all_info_box .all_box {
@@ -310,15 +389,16 @@ main #all_info_box .all_box .image_box {}
 main #all_info_box .all_box .image_box .image {}
 
 main #all_info_box .all_box .p_info {
-    margin: 20px
+    margin: 20px;text-align: center;
 }
-.p_info a{
+
+.p_info a {
     text-decoration-line: none;
 }
 main #all_info_box .all_box .p_info p {
     margin-bottom: 10px;
 }
-
+main #all_info_box .all_box .p_info p:first-child {font-size:1.5rem; font-weight: 700;}
 main #all_info_box .all_box .p_info .name {}
 
 main #all_info_box .all_box .p_info .blog {}
@@ -327,12 +407,12 @@ main #all_info_box .all_box .p_info .email {}
 
 .qr_code {
     width: 10vmax;
-    height: 10vmax; 
-    background-color: aqua;
+    height: 10vmax;
     margin-bottom: 10px;
     right: 10px;
     position: fixed;
 }
+.qr_code img {width:100%;}
 
 main #all_info_box .all_box .p_info .mbti {}
 
@@ -352,24 +432,70 @@ main #all_info_box .profile dt {
 }
 
 main #all_info_box .profile div {
+
     line-height: 1.6;
-    font-size: 1.2rem;
+    font-size: 1.05em;
     white-space: normal;
     border: 1px solid gray;
     padding: 30px;
     border-radius: 20px;
+
 }
+
 
 /* footer css */
 .footer {
-    display:flex; width:100%; margin:20px auto 0;
-    justify-content:space-evenly;background-color:pink;
+    display: flex;
+    width: 100%;
+    margin: 100px auto 0;
+    justify-content: space-evenly;
+    border-top:1px solid #fff;
+    background-color: transparent;
+    width: 85%;
+    
+
 }
-.footer .f_left {text-align:center;padding: 0;margin: 0;}
-.footer .f_left li {margin:20px 0;font-size:1.5rem;color:#000;}
-.footer .f_left li a {font-size:1.5rem;}
-.footer .f_left .title {font-size: 2rem;font-weight:700;margin-bottom:25px;}
-.footer .f_right {text-align:center;padding: 0;margin: 0;}
-.footer .f_right li {margin:20px 0;font-size:1.5rem;color:#000;}
-.footer .f_right li a {font-size:1.5rem;}
-.footer .f_right .title {font-size: 2rem;font-weight:700;margin-bottom:25px;}
+
+.footer .f_left {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .f_left li {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: rgb(173, 173, 173);
+}
+
+.footer .f_left li a {
+    font-size: 1rem;
+}
+
+.footer .f_left .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer .f_right {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .f_right li {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: rgb(173, 173, 173);
+}
+
+.footer .f_right li a {
+    font-size: 1rem;
+}
+
+.footer .f_right .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
